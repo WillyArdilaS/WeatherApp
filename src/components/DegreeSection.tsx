@@ -3,7 +3,7 @@ import { WeatherData } from "../interfaces/WeatherData"
 export const DegreeSection = ({data: {temperature, icon, description}} : {data:WeatherData}) => {
   return (
     <>
-        <section className="text-white text-5xl font-bold">
+        <section className="flex justify-center text-white text-5xl font-bold">
           <span className="text-yellow-500" id="temperature"> {temperature} </span> °C
         </section>
 
