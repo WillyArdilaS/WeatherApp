@@ -7,7 +7,7 @@ export const DegreeSection = ({data: {temperature, icon, description}} : {data:W
           <span className="text-yellow-500" id="temperature"> {temperature} </span> °C
         </section>
 
-        <section>
+        <section className="flex justify-center">
           <img src={icon} alt="Icono del clima" id="iconImg" />
         </section>
 
