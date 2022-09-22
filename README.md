@@ -7,7 +7,7 @@
 ## Descripción
 App que muestra el clima de diferentes lugares del mundo.
 
-Puedes verla ingresando a este link: [App](https://willyas-marveldcheroes.netlify.app)
+Puedes verla ingresando a este link: [App](https://willyas-weatherapp.netlify.app/)
 
 ## Autor
 William Alejandro Ardila Sánchez
