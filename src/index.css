@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        145deg,
+        rgba(2, 0, 36, 1) 0%
+        rgba(0, 58, 96, 1) 100%
+    );
+}
+
+input {
+    width: 260px;
+    height: 33px;
+    padding: 12px;
+    
+    position: absolute;
+    top: 5vh;
+
+    outline: none;
+    border: 1px solid #9bf;
+    border-radius: 5px;
+
+    font-size: 15px;
+    color: #444;
+
+    background-color: #eff;
+
+    transform: translate(-50%, -50%);
+}
+
+table {
+    width: 210px;
+
+    font-size: 17px;
+    color: #eff;
+}
+
+th {
+    padding: 0.6vh;
+
+    text-align: left;
+    color: rgb(255, 153, 0);
+}
+
+td {
+    width: 79px;
+}
