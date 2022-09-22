@@ -23,11 +23,10 @@ input {
     padding: 12px;
     
     position: absolute;
-    top: 5vh;
+    top: 4vh;
 
     outline: none;
     border: 1px solid #9bf;
-    border-radius: 5px;
 
     font-size: 15px;
     color: #444;

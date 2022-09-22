@@ -40,7 +40,7 @@ export const WeatherContainer = ({fetchedData, error} : {fetchedData:any; error:
   
 
   return (
-    <main className="w-96 rounded-3xl bg-gradient-to-b from-gray-800 to-gray-700 shadow-lg"> 
+    <main className="w-96 mt-12 rounded-3xl bg-gradient-to-b from-gray-800 to-gray-700 shadow-lg"> 
 
       {error === "" ? (
         <div className="w-full flex flex-col items-center p-8">
