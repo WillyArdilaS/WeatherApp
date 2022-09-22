@@ -26,7 +26,7 @@ export const WeatherContainer = ({fetchedData, error} : {fetchedData:any; error:
         country: fetchedData.sys.country,
         temperature: Math.floor(fetchedData.main.temp - 273),
         description: fetchedData.weather[0].description, 
-        icon: `https://api.openweathermap.org/img/wn/${fetchedData.weather[0].icon}@2x.png`,
+        icon: `http://openweathermap.org/img/wn/${fetchedData.weather[0].icon}@2x.png`,
         humidity: fetchedData.main.humidity + "%",
         feels: Math.floor(fetchedData.main.feels_like - 273) + "°C",
         visibility: fetchedData.visibility + "m",
@@ -41,11 +41,17 @@ export const WeatherContainer = ({fetchedData, error} : {fetchedData:any; error:
 
   return (
     <main className="w-96 rounded-3xl bg-gradient-to-b from-gray-800 to-gray-700 shadow-lg"> 
+
+      {error === "" ? (
         <div className="w-full flex flex-col items-center p-8">
-            <h1> <Location data={weather} /> </h1>
-            <h1> <DegreeSection data={weather} /> </h1>
-            <h1> <DetailsTable data={weather} /> </h1>
+          <h1> <Location data={weather} /> </h1>
+          <h1> <DegreeSection data={weather} /> </h1>
+          <h1> <DetailsTable data={weather} /> </h1>
         </div>
+      ) : (
+        <div className="h-56 flex justify-center items-center p-4 text-white text-2xl text-center font-bold"> {error} </div>
+      )}
+
     </main>
   )
 }
